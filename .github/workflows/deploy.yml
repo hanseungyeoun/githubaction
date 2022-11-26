@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  S3_BUKET_NAME: my-sy-bucket
+  S3_BUCKET_NAME: my-sy-bucket
   CODE_DEPLOY_APPLICATION_NAME: my-code-deploy
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: my-code-deploy-group
 
