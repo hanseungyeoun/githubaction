@@ -1,13 +1,18 @@
 package com.example.githubaction.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
 
+    @Value("override.value")
+    private String value;
+
+
     @GetMapping("/hello")
     public String hello() {
-        return "Hello world";
+        return "Hello world" + value;
     }
 }
