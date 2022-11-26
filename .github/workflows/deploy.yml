@@ -6,10 +6,9 @@ on:
       - main
 
 env:
-  S3_BUCKET_NAME: tiltil
-  RESOURCE_PATH: ./src/main/resources/application.yaml
-  CODE_DEPLOY_APPLICATION_NAME: tiltil-code-deploy
-  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: tiltil-server
+  S3_BUKET_NAME: my-sy-bucket
+  CODE_DEPLOY_APPLICATION_NAME: my-code-deploy
+  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: my-code-deploy-group
 
 jobs:
   build:
