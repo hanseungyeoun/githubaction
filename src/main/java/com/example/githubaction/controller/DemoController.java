@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @Value("override.value")
+    @Value("${override.value}")
     private String value;
 
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello world" + value;
+        return "Hello world555" + value;
     }
 }
